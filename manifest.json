@@ -1,0 +1,10 @@
+{
+  "name": "HEGEMON — آکادمی رشد",
+  "short_name": "HEGEMON",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1c20",
+  "theme_color": "#1a1c20",
+  "dir": "rtl",
+  "lang": "fa"
+}

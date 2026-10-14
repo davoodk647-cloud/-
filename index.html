@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f47b20">
-<title>آکادمی رشد هژمون</title>
-<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1c20">
+<title>HEGEMON — آکادمی رشد هژمون</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="topbar">
-  <div class="brandmark" aria-hidden="true">هـ</div>
+  <div class="brandmark brandmark--red" aria-hidden="true">H</div>
   <div class="brand">
-    <strong>آکادمی رشد هژمون</strong>
-    <small>یاد بگیر، رشد کن، آموزش بده.</small>
+    <strong class="hegemon-logo hegemon-logo--sm">HEGEMON</strong>
+    <small>آکادمی رشد — انسان‌ساز باش!</small>
   </div>
   <button class="ghost-btn" id="registerToggle">ثبت‌نام / ورود</button>
   <button class="icon-btn" id="adminToggle" title="مدیریت" aria-label="مدیریت">⚙</button>
@@ -26,7 +27,7 @@
       <p>آموزش‌ها را یاد بگیر، متن‌های پرزنت را تمرین کن و قدم‌به‌قدم پیشرفتت را دنبال کن.</p>
       <a class="primary-btn" href="#courses">شروع یادگیری <span>←</span></a>
     </div>
-    <div class="hero-symbol" aria-hidden="true"><div class="sun"></div><div class="orbit orbit1"></div><div class="orbit orbit2"></div><span>هـ</span></div>
+    <div class="hero-symbol" aria-hidden="true"><div class="sun"></div><div class="orbit orbit1"></div><div class="orbit orbit2"></div><span>H</span></div>
   </section>
 
   <section class="stats" aria-label="پیشرفت">
@@ -45,34 +46,33 @@
     <p class="empty hidden" id="emptyState">موردی پیدا نشد. عبارت دیگری جست‌وجو کن.</p>
   </section>
 
-
-<section class="section signup-panel hidden" id="signupPanel">
-  <div class="section-heading"><div><span class="eyebrow">ورود شاگردان</span><h2>ثبت‌نام در آکادمی</h2></div><button class="ghost-btn" id="closeSignup">بستن</button></div>
-  <p class="admin-note">برای ثبت‌نام، اطلاعات هویتی وارد می‌شود. این نمونه فقط رابط کاربری است و اطلاعات را به سرور نمی‌فرستد یا ذخیره نمی‌کند. برای استفاده واقعی، پردازش اطلاعات هویتی و تصویر باید با رضایت آگاهانه، حفاظت امنیتی و سیاست حفظ حریم خصوصی انجام شود.</p>
-  <form id="signupForm" class="lesson-form">
-    <label>نام<input id="givenName" required maxlength="80" autocomplete="given-name" placeholder="نام"></label>
-    <label>نام خانوادگی<input id="familyName" required maxlength="100" autocomplete="family-name" placeholder="نام خانوادگی"></label>
-    <label class="wide">کد ملی<input id="nationalId" required inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9۰-۹]{10}" autocomplete="off" placeholder="۱۰ رقم کد ملی"></label>
-    <div class="wide face-box">
-      <strong>احراز تصویری برای ورودهای بعدی</strong>
-      <p>در نسخهٔ واقعی باید از سرویس احراز هویت معتبر استفاده شود. این نمونه تصویر چهره را بارگذاری یا ذخیره نمی‌کند.</p>
-      <label>نمونه انتخاب تصویر (فقط آزمایشی)<input id="faceSample" type="file" accept="image/*" capture="user"></label>
-      <small id="faceStatus">تصویری انتخاب نشده است.</small>
-    </div>
-    <div class="wide payment-box">
-      <strong>هزینهٔ ثبت‌نام و فعال‌سازی: ۱۰٬۰۰۰ تومان</strong>
-      <p>در نسخهٔ واقعی، پس از ثبت‌نام باید به درگاه پرداخت معتبر هدایت شوید. این دکمه پرداخت واقعی انجام نمی‌دهد.</p>
-      <label class="consent"><input type="checkbox" id="privacyConsent" required> با پردازش اطلاعات برای ثبت‌نام موافقم و سیاست حریم خصوصی را مطالعه کرده‌ام.</label>
-    </div>
-    <div class="form-actions"><button class="primary-btn" type="submit">ادامه به مرحلهٔ پرداخت</button></div>
-    <p class="wide" id="signupMessage" role="status"></p>
-  </form>
-</section>
+  <section class="section signup-panel hidden" id="signupPanel">
+    <div class="section-heading"><div><span class="eyebrow">ورود شاگردان</span><h2>ثبت‌نام در آکادمی</h2></div><button class="ghost-btn" id="closeSignup">بستن</button></div>
+    <p class="admin-note">برای ثبت‌نام، اطلاعات هویتی وارد می‌شود. این نمونه فقط رابط کاربری است و اطلاعات را به سرور نمی‌فرستد یا ذخیره نمی‌کند. برای استفاده واقعی، پردازش اطلاعات هویتی و تصویر باید با رضایت آگاهانه، حفاظت امنیتی و سیاست حفظ حریم خصوصی انجام شود.</p>
+    <form id="signupForm" class="lesson-form">
+      <label>نام<input id="givenName" required maxlength="80" autocomplete="given-name" placeholder="نام"></label>
+      <label>نام خانوادگی<input id="familyName" required maxlength="100" autocomplete="family-name" placeholder="نام خانوادگی"></label>
+      <label class="wide">کد ملی<input id="nationalId" required inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9۰-۹]{10}" autocomplete="off" placeholder="۱۰ رقم کد ملی"></label>
+      <div class="wide face-box">
+        <strong>احراز تصویری برای ورودهای بعدی</strong>
+        <p>در نسخهٔ واقعی باید از سرویس احراز هویت معتبر استفاده شود. این نمونه تصویر چهره را بارگذاری یا ذخیره نمی‌کند.</p>
+        <label>نمونه انتخاب تصویر (فقط آزمایشی)<input id="faceSample" type="file" accept="image/*" capture="user"></label>
+        <small id="faceStatus">تصویری انتخاب نشده است.</small>
+      </div>
+      <div class="wide payment-box">
+        <strong>هزینهٔ ثبت‌نام و فعال‌سازی: ۱۰٬۰۰۰ تومان</strong>
+        <p>در نسخهٔ واقعی، پس از ثبت‌نام باید به درگاه پرداخت معتبر هدایت شوید. این دکمه پرداخت واقعی انجام نمی‌دهد.</p>
+        <label class="consent"><input type="checkbox" id="privacyConsent" required> با پردازش اطلاعات برای ثبت‌نام موافقم و سیاست حریم خصوصی را مطالعه کرده‌ام.</label>
+      </div>
+      <div class="form-actions"><button class="primary-btn" type="submit">ادامه به مرحلهٔ پرداخت</button></div>
+      <p class="wide" id="signupMessage" role="status"></p>
+    </form>
+  </section>
 
   <section class="section quote-section">
-    <div class="quote-mark">“</div>
-    <blockquote>هر مهارتی که یاد می‌گیری، فرصتی تازه برای رشد خودت و کمک به دیگران می‌سازد.</blockquote>
-    <span>آکادمی رشد هژمون</span>
+    <div class="quote-mark">"</div>
+    <blockquote>ماموریت تو؛ رشد خودت و کپی‌پیستِ فقط یک نفر، شبیه خودت!</blockquote>
+    <span>HEGEMON — انسان‌ساز باش!</span>
   </section>
 
   <section class="section admin-panel hidden" id="adminPanel">
@@ -89,13 +89,19 @@
     <div id="adminLessonList" class="admin-list"></div>
   </section>
 </main>
-<footer><div class="footer-mark">هـ</div><div><strong>آکادمی رشد هژمون</strong><p>یاد بگیر، رشد کن، آموزش بده.</p></div><small>نسخهٔ اولیه · قابل توسعه</small></footer>
+<footer>
+  <div class="footer-mark">H</div>
+  <div><strong class="hegemon-logo hegemon-logo--sm">HEGEMON</strong><p>آکادمی رشد — یاد بگیر، رشد کن، آموزش بده.</p></div>
+  <small>نسخهٔ اولیه · قابل توسعه</small>
+</footer>
 
 <div class="modal hidden" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal-backdrop" id="modalBackdrop"></div>
   <article class="modal-card">
     <button class="modal-close" id="modalClose" aria-label="بستن">×</button>
-    <span class="eyebrow" id="modalCategory"></span><h2 id="modalTitle"></h2><p class="modal-summary" id="modalSummary"></p>
+    <span class="eyebrow" id="modalCategory"></span>
+    <h2 id="modalTitle"></h2>
+    <p class="modal-summary" id="modalSummary"></p>
     <div class="lesson-content" id="modalBody"></div>
     <div class="modal-actions"><button class="ghost-btn" id="copyLesson">کپی متن</button><button class="primary-btn" id="markDone">علامت‌گذاری به‌عنوان مطالعه‌شده ✓</button></div>
   </article>
